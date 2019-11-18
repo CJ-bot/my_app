@@ -14,6 +14,24 @@
             </div>
             <p class="icons-desc">一日游</p>
         </div>
+        <div class="icon">
+            <div class="icon-img">
+                <img src="http://img1.qunarzz.com/piao/fusion/1803/f5/a963333e1fa802.png" alt="" class="icon-img-content">
+            </div>
+            <p class="icons-desc">当地好玩</p>
+        </div>
+        <div class="icon">
+            <div class="icon-img">
+                <img src="http://img1.qunarzz.com/piao/fusion/1803/ee/5114069893722102.png" alt="" class="icon-img-content">
+            </div>
+            <p class="icons-desc">游山玩水</p>
+        </div>
+        <div class="icon">
+            <div class="icon-img">
+                <img src="http://img1.qunarzz.com/piao/fusion/1803/80/416c6ab3368d1f02.png" alt="" class="icon-img-content">
+            </div>
+            <p class="icons-desc">全部玩乐</p>
+        </div>
     </div>
 </template>
 <script>
