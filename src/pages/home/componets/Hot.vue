@@ -87,7 +87,7 @@ export default {
                 price:'￥80'
             }]
         }
-    }
+    }   
 }
 </script>
 
