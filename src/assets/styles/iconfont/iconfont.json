@@ -1,0 +1,44 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "45688113",
+      "name": "箭头",
+      "font_class": "jiantou",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "45688114",
+      "name": "返回",
+      "font_class": "fanhui",
+      "unicode": "e6b7",
+      "unicode_decimal": 59063
+    },
+    {
+      "icon_id": "45688115",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "2794558",
+      "name": "爱心",
+      "font_class": "heart-copy",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "9712780",
+      "name": "星星",
+      "font_class": "xingxingx",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    }
+  ]
+}

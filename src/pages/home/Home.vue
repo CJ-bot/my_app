@@ -2,21 +2,27 @@
       <div>
            <home-header></home-header>
            <home-swiper></home-swiper>
+           <home-icons></home-icons>
            <home-hot></home-hot>
+           <home-liked></home-liked>
       </div>
 </template>
 
 <script>
 import HomeHeader from './componets/header'
 import HomeSwiper from './componets/swiper'
+import HomeIcons from './componets/Icons'
 import HomeHot from './componets/Hot'
+import HomeLiked from './componets/liked'
 //添加HomeIcons组件
 export default {
     name: 'Home',
     components:{
         HomeHeader,
         HomeSwiper,
-        HomeHot
+        HomeIcons,
+        HomeHot,
+        HomeLiked
     }
 }
 </script>
