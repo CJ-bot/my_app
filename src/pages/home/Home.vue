@@ -5,6 +5,7 @@
            <home-icons></home-icons>
            <home-hot></home-hot>
            <home-liked></home-liked>
+           <home-where></home-where>
       </div>
 </template>
 
@@ -14,6 +15,7 @@ import HomeSwiper from './componets/swiper'
 import HomeIcons from './componets/Icons'
 import HomeHot from './componets/Hot'
 import HomeLiked from './componets/liked'
+import HomeWhere from './componets/where'
 //添加HomeIcons组件
 export default {
     name: 'Home',
@@ -22,7 +24,8 @@ export default {
         HomeSwiper,
         HomeIcons,
         HomeHot,
-        HomeLiked
+        HomeLiked,
+        HomeWhere
     }
 }
 </script>
