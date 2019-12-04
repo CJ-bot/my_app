@@ -37,6 +37,7 @@ export default {
     },
     data () {
         return {
+            city:'',
             swiperList: [],
             iconsList:[],
             hotList:[],
@@ -56,6 +57,7 @@ export default {
         // getHomeInfoSucc会将获取成功的数据打印
         getHomeInfoSucc(res) {
             // 统一获取页面模拟的数据
+            console.log('res :', res);
             res = res.data
             if(res.ret && res.data){
                 // 判定res.ret返回是否真并且数据是否存在
@@ -63,7 +65,7 @@ export default {
                 this.city = data.city
                 this.swiperList = data.swiperList
                 this.iconsList = data.iconsList
-                this.hotList = data.data.hotList
+                this.hotList = data.hotList
                 this.likedList = data.likedList
                 this.whereList = data.whereList
             }
@@ -79,6 +81,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang='stylus' scoped>
 
 </style>
