@@ -5,11 +5,11 @@
            <!-- 绑定list来传递swiperList数据-->
            <home-swiper :list='swiperList'></home-swiper>
            <!-- 绑定list来传递iconList数据-->
-           <home-icons :list='iconsList'></home-icons>
+           <home-icons :list='iconList'></home-icons>
            <!-- 绑定list来传递hotList数据-->
            <home-hot :list='hotList'></home-hot>
            <!-- 绑定list来传递likeList数据-->
-           <home-liked :list='likedList'></home-liked>
+           <home-liked :list='likeList'></home-liked>
            <!-- 绑定list来传递weekendList数据-->
            <home-where :list='whereList'></home-where>
       </div>
@@ -41,7 +41,7 @@ export default {
             swiperList: [],
             iconsList:[],
             hotList:[],
-            likedList:[],
+            likeList:[],
             whereList:[]
         }
     },
@@ -64,9 +64,9 @@ export default {
                 const data = res.data
                 this.city = data.city
                 this.swiperList = data.swiperList
-                this.iconsList = data.iconsList
+                this.iconList = data.iconList
                 this.hotList = data.hotList
-                this.likedList = data.likedList
+                this.likeList = data.likeList
                 this.whereList = data.whereList
             }
              // console.log(res)
