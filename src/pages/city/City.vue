@@ -5,9 +5,11 @@
         <!-- 将axios获取的json数据传递给局部组件 -->
         <city-list :cities='cities'
                    :hot='hotCities'
+                   :letter='letter'
                    ></city-list>
         <city-alphabet
                    :cities='cities'
+                   @change="handleLetterChange"
                    ></city-alphabet>
     </div>
 </template>
@@ -31,7 +33,8 @@ export default {
     data(){
         return{
             cities:{},
-            hotCities:[]
+            hotCities:[],
+            letter:''
         }
     },
     // 通过getCityInfo函数获取city.json里的数据，然后传递给handleGetCityInfoSucc函数
@@ -47,6 +50,10 @@ export default {
                 this.hotCities=data.hotCities
             }
             //console.log(res)
+        },
+        //change事件接受传递过来的参数letter
+        handleLetterChange(letter){
+            this.letter=letter
         }
     },
     //在生命周期里调用getCityInfo函数

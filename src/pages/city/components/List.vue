@@ -18,7 +18,7 @@
                 </div>
             </div>
         </div>
-        <div class="area" v-for="(item, key) of cities" :key="key">
+        <div class="area" v-for="(item, key) of cities" :key="key" :ref="key">
             <div class="title border-topbottom">{{key}}</div>
             <div class="item-list">
                 <div class="item border-bottom" v-for="innerItem of item" :key="innerItem.id">
@@ -38,11 +38,22 @@ export default {
     //props种制定传入数据的类型
     props:{
         hot:Array,
-        cities:Object
+        cities:Object,
+        letter:String
     },
     // 添加声明周期函数并调用
     mounted(){
         this.scroll=new Bscroll(this.$refs.wrapper)
+    },
+    //通过watch监听letter的变化，在通过scroll的方法滚动到对应的letter位置
+    watch:{
+        letter(){
+            if(this.letter){
+                const element=this.$refs[this.letter][0]
+                //console.log(element)
+                this.scroll.scrollToElement(element)
+            }
+        }
     }
 }
 </script>

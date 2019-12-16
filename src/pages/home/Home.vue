@@ -5,7 +5,7 @@
            <!-- 绑定list来传递swiperList数据-->
            <home-swiper :list='swiperList'></home-swiper>
            <!-- 绑定list来传递iconList数据-->
-           <home-icons :list='iconList'></home-icons>
+           <home-icons :list='iconsList'></home-icons>
            <!-- 绑定list来传递hotList数据-->
            <home-hot :list='hotList'></home-hot>
            <!-- 绑定list来传递likeList数据-->
@@ -39,7 +39,7 @@ export default {
         return {
             city:'',
             swiperList: [],
-            iconsList:[],
+            iconList:[],
             hotList:[],
             likeList:[],
             whereList:[]

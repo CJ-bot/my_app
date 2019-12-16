@@ -12,7 +12,7 @@
                <div class="header-right">
                    {{this.city}}
                    <!-- 传入城市的名字 -->
-                   <span class="iconfont arrow-icon">&#xe6aa;</span>
+                   <span class="iconfont arrow-icon">&#xe60c;</span>
                </div>
            </router-link>
     </div>
@@ -20,7 +20,10 @@
 
 <script>
 export default {
-    name:'HomeHeader'
+    name:'HomeHeader',
+    props:{
+        city: String
+    }
 }
 </script>
 
