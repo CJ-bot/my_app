@@ -7,10 +7,16 @@
             <span class="iconfont">&#xe613;</span>
             输入城市/景点/游玩主题
         </div>
-        <div class="header-right">
-            城市
-            <span class="iconfont arrow-icon">&#xe60c;</span>
-        </div>
+        <!-- 使用router-link标签包裹header-right标签并制定路由跳转到'/city' -->
+        <router-link>
+            <div class="header-right">
+                <!-- {{this.city}} -->
+                <!-- 使用vuex中的state里公用数据 -->
+                {{this.$store.state.city}}
+                <!-- 传入城市名称 -->
+                <span class="iconfont arrow-icon">&#xe60c;</span>
+            </div>
+        </router-link>
     </div>
 </template>
 
